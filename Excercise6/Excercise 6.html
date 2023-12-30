@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #lives {
+        text-align: right;
+      }
+
+      #level,
+      #testo {
+        text-align: center;
+      }
+
+      #testo {
+        color: rgb(107, 0, 0);
+        font-size: 100px;
+        font-weight: bolder;
+      }
+      /* #hiddenNumber {
+        background-color: black;
+        margin-left: auto;
+        margin-right: auto;
+        width: 5%;
+        text-align: center;
+      } */
+      #theNumber {
+        color: white;
+      }
+      /* #userGuess {
+        background-color: blue;
+      } */
+    </style>
+  </head>
+  <body
+    onload="changeLevel(1); timeTesto(60); generateNewUnkown(50);"
+    id="body"
+  >
+    <p id="testo">60</p>
+    <h1 id="level">Easy Mode(1-50)</h1>
+    <p id="lives">Attempts :<span id="numOfLives">0</span></p>
+
+    <div id="usersNumber">
+      <form name="userForm" action="">
+        <label for="userGuess">
+          <input type="text" name="userGuess" id="userGuess" />
+        </label>
+      </form>
+
+      <button id="submitUsersGuess" onclick="validateUserGuess()">
+        Submit
+      </button>
+
+      <p id="comment"></p>
+    </div>
+    <script src="Excercise 6.js"></script>
+  </body>
+</html>
